@@ -5,6 +5,8 @@ require 'yaml'
 apiKey = YAML.load_file('facebookapi.yml')["key"]
 
 #Setup graph so that I can post from my account to CIS@PENN
+#For this to work you must set a file called facebookapi.yml with an entry like
+#key: yourfacebooktokenhere
 @graph = Koala::Facebook::API.new(apiKey)
 
 previousPos = 137

@@ -1,3 +1,0 @@
-[20..50].each do |n|
-  puts "helloworld"
-end

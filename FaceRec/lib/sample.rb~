@@ -1,0 +1,21 @@
+# To use the Face Recognition API in your code, just import the generated code
+# add your developer key (you can find it in your dashboard: http://www.mashape.com/account/index )
+# and relax!
+# This is a sample of the initialization of the client.. then call its methods!
+
+
+require File.join(File.dirname(__FILE__), "FaceRecognition.rb")
+
+# Install the Mashape gem: gem install mashape
+
+# Basic instantiation. TODO Put your authentication keys here.
+client = FaceRecognition.new("MASHAPE_PUBLIC_KEY", "MASHAPE_PRIVATE_KEY")
+
+
+
+# A sample function call. These parameters are not properly filled in.
+# See FaceRecognition.rb to find all function names and parameters.
+response = client.createAlbum("FILL IN PARAMETERS HERE", ...)
+
+# now you can do something with the response.
+puts response
